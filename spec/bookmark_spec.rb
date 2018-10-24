@@ -1,9 +1,10 @@
 require 'bookmark'
 
 describe Bookmark do
-  it 'initializes with a name' do
-    bookmark = Bookmark.new('Bookmark 1')
-    expect(bookmark.name).to eq 'Bookmark 1'
+  it 'initializes with url and title' do
+    bookmark = Bookmark.new('bookmark.com', 'Bookmark 1')
+    expect(bookmark.title).to eq 'Bookmark 1'
+    expect(bookmark.url).to eq 'bookmark.com'
   end
 
   describe '.all' do
@@ -14,16 +15,18 @@ describe Bookmark do
         ('http://www.google.com');"
       )
       bookmarks = Bookmark.all
-      expect(bookmarks).to include 'http://www.makersacademy.com'
-      expect(bookmarks).to include 'http://www.google.com'
+      expect(bookmarks[0].url).to eq('http://www.makersacademy.com')
+      expect(bookmarks[1].url).to eq('http://www.google.com')
     end
   end
 
   describe '.create' do
     it 'should add a new bookmark to database' do
-      Bookmark.create("http://www.makersacademy.com")
+      Bookmark.create("http://www.makersacademy.com", 'Makers Academy')
       bookmarks = Bookmark.all
-      expect(bookmarks).to include('http://www.makersacademy.com')
+      expect(bookmarks[0].url).to eq('http://www.makersacademy.com')
     end
   end
+
+
 end
