@@ -1,19 +1,28 @@
 require 'capybara/rspec'
 require 'pg'
+require 'selenium'
 require 'simplecov'
 require 'simplecov-console'
 require 'capybara'
 require 'rspec'
-require './app'
+require './bookmark_manager_app'
 
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
+require File.join(File.dirname(__FILE__), '..', 'bookmark_manager_app.rb')
 
 ENV['RACK_ENV'] = 'test'
 Capybara.app = BookmarkManager
 
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(
-  [
-    SimpleCov::Formatter::Console
-  ]
-)
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
+  SimpleCov::Formatter::Console,
+  # Want a nice code coverage website? Uncomment this next line!
+  # SimpleCov::Formatter::HTMLFormatter
+])
 SimpleCov.start
+
+RSpec.configure do |config|
+  config.after(:suite) do
+    puts
+    puts "\e[33mHave you considered running rubocop? It will help you improve your code!\e[0m"
+    puts "\e[33mTry it now! Just run: rubocop\e[0m"
+  end
+end

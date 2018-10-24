@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
+gem 'selenium'
 gem 'sinatra'
 
 group :test do

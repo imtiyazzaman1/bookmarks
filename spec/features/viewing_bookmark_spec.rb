@@ -1,3 +1,4 @@
+require 'spec_helper'
 
 feature 'Viewing bookmarks' do
   scenario 'diplays a list of bookmarks' do
@@ -6,3 +7,4 @@ feature 'Viewing bookmarks' do
     expect(page).to have_content 'http://www.google.com'
   end
 end
+# testing git push

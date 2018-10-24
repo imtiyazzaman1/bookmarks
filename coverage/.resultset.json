@@ -1,53 +1,8 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/edytabednarz/Developer/bookmark_managerBill/spec/bookmark_spec.rb": [
+      "/Users/williammuxworthy/Documents/makers_academy/week4/bookmarks/spec/features/viewing_bookmark_spec.rb": [
         1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/edytabednarz/Developer/bookmark_managerBill/lib/bookmark.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        2,
-        2,
-        6,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/edytabednarz/Developer/bookmark_managerBill/spec/features/index_page_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/edytabednarz/Developer/bookmark_managerBill/spec/features/viewing_bookmark_spec.rb": [
         null,
         1,
         1,
@@ -58,6 +13,6 @@
         null
       ]
     },
-    "timestamp": 1540309205
+    "timestamp": 1540375041
   }
 }

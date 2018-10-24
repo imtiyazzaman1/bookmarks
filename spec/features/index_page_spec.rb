@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 feature "index page" do
   scenario "display bookmark manager title" do
     visit '/'
