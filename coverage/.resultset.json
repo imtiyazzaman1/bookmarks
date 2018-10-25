@@ -12,6 +12,22 @@
         null,
         null
       ],
+      "/Users/caitlincooling/Projects/bookmarks/spec/features/deleting_bookmark_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/caitlincooling/Projects/bookmarks/spec/features/index_page_spec.rb": [
         1,
         null,
@@ -40,6 +56,6 @@
         null
       ]
     },
-    "timestamp": 1540475200
+    "timestamp": 1540475823
   }
 }

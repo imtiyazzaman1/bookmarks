@@ -30,8 +30,7 @@ describe Bookmark do
 
   describe '::delete' do
     it 'should delete a bookmark from the database' do
-      connection = PG.connect(dbname: 'bookmark_manager_test')
-      connection.exec("INSERT INTO bookmarks(id, url, title) VALUES('1', 'http://www.makersacademy.com', 'Makers Academy' )")
+      Bookmark.create("http://www.makersacademy.com", 'Makers Academy')
       Bookmark.delete("1")
       bookmarks = Bookmark.all
       expect(bookmarks).to be_empty
