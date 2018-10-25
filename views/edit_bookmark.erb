@@ -1,0 +1,12 @@
+<h1>Update Bookmark</h1>
+
+<form action="/bookmark/<%= @bookmark.id %>" method="post">
+  url:<br>
+  <input type="text" name="url" value='<%= @bookmark.url %>'>
+  <br>
+  title:
+  <br>
+  <input type="text" name="title" value='<%= @bookmark.title %>'>
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="submit" value="Add">
+</form>

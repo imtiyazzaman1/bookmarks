@@ -37,4 +37,24 @@ describe Bookmark do
     end
   end
 
+  describe '::update' do
+    it "should update an existing bookmark in the database" do
+      Bookmark.create("http://www.makersacademy.com", 'Makers Academy')
+      Bookmark.update('1', 'https://makers.tech', 'Makers')
+
+      expect(Bookmark.all.first.title).to eq 'Makers'
+      expect(Bookmark.all.first.url).to eq 'https://makers.tech'
+    end
+  end
+
+  describe '::find' do
+    it "should return a bookmark with the matching id" do
+      Bookmark.create("http://www.makersacademy.com", 'Makers Academy')
+
+      bookmark = Bookmark.find('1')
+      expect(bookmark.title).to eq 'Makers Academy'
+
+    end
+  end
+
 end
