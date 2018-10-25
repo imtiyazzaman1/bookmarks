@@ -17,6 +17,7 @@ class Bookmark
   end
 
   def self.create(url, title)
+    return false unless is_valid?(url)
     connect_to_db
     @connection.exec("INSERT INTO bookmarks (url, title)
       VALUES('#{url}', '#{title}');"
@@ -53,5 +54,9 @@ class Bookmark
     else
       @connection = PG.connect(dbname: 'bookmark_manager')
     end
+  end
+
+  def self.is_valid?(url)
+    url =~ URI::regexp
   end
 end

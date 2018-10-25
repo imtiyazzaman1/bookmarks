@@ -53,8 +53,14 @@ describe Bookmark do
 
       bookmark = Bookmark.find('1')
       expect(bookmark.title).to eq 'Makers Academy'
-
     end
   end
 
+  describe '::is_valid?' do
+
+    it 'Should return false with a invalid url' do
+          url = 'www.makersacademy.com'
+          expect(Bookmark.create(url, 'Makers Academy')).to eq false
+        end
+  end
 end
