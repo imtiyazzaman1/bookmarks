@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/admin/Projects/Week 4 Databases/bookmarks/spec/features/clicking_a_bookmark_spec.rb": [
+      "/Users/caitlincooling/Projects/bookmarks/spec/features/clicking_a_bookmark_spec.rb": [
         1,
         1,
         1,
@@ -12,7 +12,7 @@
         null,
         null
       ],
-      "/Users/admin/Projects/Week 4 Databases/bookmarks/spec/features/index_page_spec.rb": [
+      "/Users/caitlincooling/Projects/bookmarks/spec/features/index_page_spec.rb": [
         1,
         null,
         1,
@@ -22,7 +22,7 @@
         null,
         null
       ],
-      "/Users/admin/Projects/Week 4 Databases/bookmarks/spec/features/viewing_bookmark_spec.rb": [
+      "/Users/caitlincooling/Projects/bookmarks/spec/features/viewing_bookmark_spec.rb": [
         1,
         null,
         1,
@@ -40,6 +40,6 @@
         null
       ]
     },
-    "timestamp": 1540474081
+    "timestamp": 1540475200
   }
 }
