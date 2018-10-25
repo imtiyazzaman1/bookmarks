@@ -5,8 +5,9 @@ feature "Adding a bookmark" do
     visit '/'
     click_link 'Add Bookmark'
     fill_in 'url', with: "http://www.makersacademy.com"
+    fill_in 'title', with: "Makers Academy"
     click_button 'Add'
-    expect(page).to have_content "http://www.makersacademy.com"
+    expect(page).to have_content "Makers Academy"
 
   end
 end
